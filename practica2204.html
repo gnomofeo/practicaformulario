@@ -10,23 +10,21 @@
 </head>
 <body>
     <h1>Formulario de Registro</h1>
-    <form action="practica2204(get).html" method="get">
-        <p>Nombre(s): <input type="text" name="nombre" size="40" placeholder="Escriba algo"></p>
-        <p>Apellidos: <input type="text" name="apellidos" size="40" placeholder="Escriba algo"></p>
-        <p>Edad: <input type="number" name="edad" size="40"></p>
-        <p>Correo: <input type="email" name="correo" min="1900"></p>
-        <p>contraseña: <input type="password" name="contraseña" size="40"></p>
+    <form action="practica2204(get).html" method="POST">
+        <p>Nombre(s): <input type="text" name="nombre" id= "nombre" size="40" placeholder="Escriba algo"></p>
+        <p>Apellidos: <input type="text" name="apellidos" id="apellidos" size="40" placeholder="Escriba algo"></p>
+        <p>Edad: <input type="number" name="edad" id="edad" size="40"></p>
+        <p>Correo: <input type="email" name="correo" id="correo" min="1900"></p>
+        <p>contraseña: <input type="password" name="contraseña" id="contraseña" size="40"></p>
         <p>Sexo:
-          <input type="radio" name="hm" value="h"> Masculino    
-          <input type="radio" name="hm" value="m"> Femenino
-          
+            <label><input type="radio" name="hm" id="hm" value="h"> Masculino</label>
+            <label><input type="radio" name="hm" id="hm" value="m"> Femenino</label>
         </p>
-        <p><input type = "checkbox" name= "deseoinfo"> Deseo recibir informacion a mi correo.</p>
-          <p><input type = "checkbox" name= "terminos"> Acepto haber leido los terminos y condiciones del programa.</p>
+        <p><label><input type = "checkbox" name= "deseoinfo" id="deseoinfo"> Deseo recibir informacion a mi correo.</label></p>
+          <p><label><input type = "checkbox" name= "terminos" id="terminos"> Acepto haber leido los terminos y condiciones del programa.</label></p>
         <p>
-          
-              <button class ="button miBoton">Enviar</button>
-          
+            <input type="submit" class ="miBoton" value="Enviar">
+
         </p>
       </form>
 </body>
